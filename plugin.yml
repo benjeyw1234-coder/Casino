@@ -1,0 +1,19 @@
+name: MineVegasCasino
+version: 1.0.0
+main: io.github.minevegas.MineVegas
+api-version: '26.1'
+description: Casino-Spiele (Slots, Roulette, Blackjack, Entenrennen, Glücksrad, Plinko) als Server-Plugin
+commands:
+  casino:
+    description: Casino verwalten
+    usage: /casino <menu|give|play|reload> ...
+permissions:
+  minevegas.admin:
+    description: Automaten platzieren/abbauen, /casino give, /casino reload
+    default: op
+  minevegas.menu:
+    description: Casino-Kreativmenü (/casino menu) öffnen
+    default: op
+  minevegas.play:
+    description: Casino-Automaten benutzen
+    default: true

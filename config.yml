@@ -1,0 +1,20 @@
+# MineVegas Casino – Einstellungen
+
+# /casino play <spiel> ohne Automaten-Block erlauben?
+allow-play-command: false
+
+# Gewinne ab dem x-fachen Einsatz im Chat ansagen (0 = aus)
+broadcast-win-multiplier: 25
+
+duck-derby:
+  # Auszahlung bei richtigem Tipp (Gesamtauszahlung inkl. Einsatz).
+  # 5 Enten mit gleicher Chance -> 4.5 = ca. 10 % Hausvorteil
+  payout: 4.5
+
+plinko:
+  # 9 Fächer von links nach rechts (Gesamtauszahlung inkl. Einsatz)
+  multipliers: [10, 3, 1.5, 0.6, 0.2, 0.6, 1.5, 3, 10]
+
+wheel:
+  # genau 20 Felder im Uhrzeigersinn (Gesamtauszahlung inkl. Einsatz, 0 = Niete)
+  segments: [0, 0.5, 0, 1, 0, 0, 1.5, 0, 2, 0, 0.5, 0, 1, 3, 0, 1, 0, 5, 0, 2]
